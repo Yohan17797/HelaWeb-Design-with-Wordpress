@@ -1,0 +1,657 @@
+@import "shared";
+
+#totalpoll-editor {
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+
+  * {
+    box-sizing: inherit;
+  }
+
+  .dashicons {
+    font-size: 20px;
+  }
+
+  .totalpoll-hide {
+    display: none;
+  }
+
+  [data-tp-toggleable] {
+    display: none;
+
+    &.active {
+      display: block !important;
+    }
+  }
+
+  td[data-tp-toggleable].active, th[data-tp-toggleable].active {
+    display: table-cell !important;
+  }
+
+  .update-nag {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .totalpoll-h2 {
+    margin: 2rem 0 1rem;
+    padding: 0;
+    font-size: 1.25rem;
+  }
+
+  .feature-details {
+    display: inline-block;
+    margin: 0 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: $gray;
+    border-radius: 50%;
+    font-family: sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .feature-tip {
+    color: $darkergray;
+    font-style: italic;
+    font-size: 12px;
+
+    &:before {
+      display: inline-block;
+      margin-right: 0.5rem;
+      content: "✱";
+      font-style: normal;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .wp-editor-wrap {
+    margin-top: 15px;
+    .wp-switch-editor {
+      box-sizing: content-box;
+    }
+    input, select, textarea {
+      padding: 0 10px;
+    }
+  }
+
+  .question-wrapper {
+    input {
+      padding: 1em;
+    }
+
+  }
+
+  .containables-container {
+    .containables-types {
+      li {
+        display: inline-block;
+        + li {
+          margin-left: .5em;
+        }
+      }
+    }
+
+    .containables {
+      .containable {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border: 1px solid $gray;
+        background: $lightgray;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+
+        &:hover {
+          border-color: $darkgray;
+        }
+
+        &.ui-sortable-helper {
+          box-shadow: 0 1px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .containable-handle {
+          padding: 1em;
+          cursor: move;
+
+          &.ui-sortable-handle {
+            cursor: move;
+          }
+
+          &:before {
+            float: left;
+            margin-right: 0.5em;
+            content: '\f140';
+            font-family: 'dashicons';
+            font-size: 1.5em;
+            border: none;
+            background: none;
+            text-indent: 0;
+            text-decoration: none !important;
+            color: $gray;
+            cursor: pointer;
+          }
+
+          &:hover:before {
+            color: $darkgray;
+          }
+
+          &-title {
+            font-style: italic;
+            color: $darkgray;
+          }
+
+          .containable-votes {
+            margin: -3px 10px 0 0;
+            padding: 0 0 0 8px;
+            float: right;
+            background: #fff;
+            border: 1px solid $gray;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            input {
+              margin-left: 8px;
+              padding: 0 4px 1px;
+              height: 21px;
+              width: 60px;
+              border: 0;
+              border-left: 1px solid $gray;
+              font-size: 11px;
+              line-height: 22px;
+              text-align: center;
+            }
+          }
+
+          .containable-visibility {
+            position: relative;
+            margin: -3px 10px 0 0;
+            float: right;
+            background: #fff;
+            min-width: 32px;
+            min-height: 24px;
+
+            &:hover, &:focus {
+              border-color: $primary;
+            }
+
+            span {
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+
+              @at-root {
+                .branch-3-8 &, .branch-3-9 & {
+                  &.dashicons-hidden:before {
+                    content: "\f177";
+                    color: $gray;
+                  }
+                }
+              }
+            }
+
+            input {
+
+              display: none;
+              &:checked + .dashicons-hidden,
+              &:checked + .dashicons-visibility {
+                display: none;
+              }
+
+            }
+
+            .dashicons-visibility {
+              color: $primary;
+            }
+
+          }
+
+          .containable-remove {
+            @extend .button-danger;
+            margin: -3px 0 0 0;
+            float: right;
+          }
+        }
+
+        .containable-content {
+          display: none;
+          padding: 1em;
+          background: #fff;
+          border-top: 1px solid $gray;
+
+          &.with-tabs {
+            padding: 0;
+
+            .totalpoll-tabs-container {
+              border: 0;
+
+              .totalpoll-tabs a.active {
+                border-left: 0;
+                margin-left: 0;
+              }
+
+            }
+          }
+
+          .field-wrapper {
+            label {
+              display: block;
+              margin-bottom: 0.75rem;
+            }
+            + .field-wrapper {
+              margin-top: 1em;
+            }
+          }
+
+          .field-row {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+
+            .field-column {
+              display: table-cell;
+              vertical-align: top;
+
+              + .field-column {
+                padding-left: 1em;
+              }
+
+              &.fifth {
+                width: 20%;
+              }
+            }
+          }
+
+          &.containable-votes {
+            label {
+              width: 10%;
+            }
+            input {
+              width: auto;
+            }
+          }
+        }
+
+        &.active {
+          .containable-handle {
+            &:before {
+              content: '\f142';
+            }
+          }
+          .containable-content {
+            display: block;
+          }
+        }
+
+      }
+    }
+  }
+
+  .totalpoll-tabs-container {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    //min-height: 250px;
+
+    border: 1px solid $gray;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+
+    .totalpoll-tabs {
+      display: table-cell;
+      width: 180px;
+      padding: 1rem 0 3rem;
+      background-color: $lightgray;
+      border-right: 1px solid $gray;
+      box-shadow: inset -2px 0 6px rgba(0, 0, 0, 0.025);
+      vertical-align: top;
+
+      a {
+        display: block;
+        padding: 0.75rem 0.75rem 0.75rem 1rem;
+
+        border: 1px solid transparent;
+        border-left-width: 2px;
+        text-decoration: none;
+
+        color: $darkergray;
+
+        .dashicons {
+          margin-right: 0.5rem;
+        }
+
+        &:hover {
+          color: $primary;
+        }
+
+        &.active {
+          margin-right: -1px;
+          margin-left: -2px;
+
+          color: $primary;
+          background-color: white;
+
+          border-color: $gray;
+          border-right-color: transparent;
+          border-left-color: $primary;
+          box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02), 0 1px 0 rgba(0, 0, 0, 0.02);
+        }
+
+        &:active {
+          outline: 0;
+          box-shadow: none;
+        }
+
+      }
+
+    }
+
+    .totalpoll-tabs-content {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .totalpoll-tab-content {
+      display: none;
+      padding: 1.5rem;
+
+      &.active {
+        display: block;
+      }
+
+      .containables-types {
+        margin-top: 0;
+      }
+    }
+
+    &.totalpoll-tabs-vertical {
+
+      .totalpoll-tabs, .totalpoll-tabs-content {
+        display: block;
+      }
+
+      .totalpoll-tabs {
+        width: 100%;
+        padding: 0;
+        border-right: 0;
+        box-shadow: none;
+        border-bottom: 1px solid $gray;
+        @extend .clearfix;
+
+        a {
+          display: inline-block;
+          min-width: 100px;
+          margin-top: -2px;
+          margin-bottom: -1px;
+          margin-left: -1px;
+          padding: 0.75rem 1rem;
+          float: left;
+          border: 1px solid transparent;
+          vertical-align: bottom;
+          border-top: 2px solid transparent;
+
+          &.active {
+            position: relative;
+            z-index: 1;
+            margin-right: 0;
+            background-color: #fff;
+            border-color: $gray;
+            border-top-color: $primary;
+            border-bottom-color: transparent;
+            box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.075);
+
+          }
+        }
+      }
+    }
+
+  }
+
+  .settings-wrapper {
+
+    .settings-container {
+
+      .settings-item {
+        position: relative;
+
+      }
+
+      .settings-item ~ .settings-item {
+        margin-top: 0.75rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid $lightgray;
+      }
+
+      .settings-item-advanced {
+        position: relative;
+        display: none;
+        padding: 1.5rem;
+        margin: 1.5rem -1.5rem;
+        border: 1px solid $gray;
+        border-right: 0;
+        border-left: 0;
+        background: white;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+
+        &:before, &:after {
+          position: absolute;
+          top: -0.5rem;
+          left: 1.5rem;
+          display: block;
+          content: '';
+
+          width: 0;
+          height: 0;
+          border-left: 0.5rem solid transparent;
+          border-right: 0.5rem solid transparent;
+          border-bottom: 0.5rem solid $gray;
+        }
+
+        &:after {
+          top: -0.4rem;
+          left: 1.6rem;
+          border-bottom-color: white;
+          border-right-width: 0.4rem;
+          border-bottom-width: 0.4rem;
+          border-left-width: 0.4rem;
+        }
+
+      }
+
+      .settings-item-advanced:last-child {
+        margin-bottom: -1rem;
+        border-bottom: 0;
+      }
+
+      .settings-item-advanced.active + .settings-item {
+        margin-top: -1.5rem;
+      }
+
+      .settings-field {
+        margin-bottom: 1rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .settings-field-input {
+
+      }
+
+      .settings-field-select {
+
+      }
+
+      .settings-field-label {
+        display: block;
+        margin-bottom: 0.75rem;
+      }
+
+      .mceIframeContainer iframe {
+        min-height: 100px;
+      }
+
+    }
+  }
+
+  .totalpoll-toolbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &.with-major-actions {
+      margin: 0 -1.5rem -1.5rem;
+      padding: 0.75rem;
+      background: $lightgray;
+      border-top: 1px solid $gray;
+      line-height: 28px;
+    }
+  }
+
+  .totalpoll-inline-labels {
+    label {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+    label + label {
+      margin-left: 1rem;
+    }
+  }
+
+  .totalpoll-chart-canvas {
+    max-width: 100%;
+    max-height: 500px;
+    padding: 1.5rem;
+  }
+
+  .totalpoll-statistics-progress {
+    padding: 0.5rem;
+    margin: 10rem auto;
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid $gray;
+    text-align: center;
+
+    &-bar {
+      display: block;
+      background: $primary;
+      height: 0.25rem;
+      transition: width 0.5s ease-out;
+    }
+  }
+
+  .totalpoll-statistics-card {
+    float: left;
+    width: 49%;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    border: 1px solid $gray;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+
+    .totalpoll-statistics-card-header {
+      margin: 0;
+      padding: 1rem;
+      line-height: 1;
+      background-color: $lightgray;
+
+      border-bottom: 1px solid $gray;
+    }
+    .totalpoll-statistics-card-content {
+    }
+
+    .totalpoll-statistics-card-footer {
+
+    }
+
+    + .totalpoll-statistics-card {
+      margin-left: 2%;
+    }
+
+    &.full {
+      width: 100%;
+      float: none;
+    }
+
+  }
+
+  .totalpoll-statistics-inline {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-top: 1px solid $gray;
+
+    .totalpoll-statistics-item {
+      display: table-cell;
+      padding: 0.75rem;
+      vertical-align: middle;
+      text-align: center;
+
+      p {
+        margin: 0 0 0.5rem;
+      }
+
+      .number {
+        font-size: 1.75rem;
+
+        &.green {
+          color: limegreen;
+        }
+
+        &.red {
+          color: tomato;
+        }
+      }
+
+      .text {
+        color: $deepgray;
+      }
+
+      + .totalpoll-statistics-item {
+        border-left: 1px solid $gray;
+      }
+
+    }
+
+  }
+
+  .wp-picker-container {
+    position: relative;
+    box-sizing: content-box;
+
+    .wp-picker-holder {
+      position: absolute;
+      z-index: 1;
+      display: none;
+      padding: 1rem;
+      background-color: white;
+      border: 1px solid $gray;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    }
+
+    .iris-picker {
+      border: 0;
+    }
+
+    .button {
+      box-sizing: border-box;
+    }
+
+    .wp-picker-open ~ .wp-picker-holder {
+      display: block;
+    }
+  }
+
+}

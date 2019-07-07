@@ -1,0 +1,369 @@
+#qlwapp {
+  display: none;
+
+
+  &.qlwapp-show {
+    .qlwapp-box {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      display: block;
+    }
+  }
+
+  &.qlwapp-transition {
+    .qlwapp-box {
+      visibility: visible;
+      display: block;
+    }
+  }
+
+  &.qlwapp-bubble {
+
+    &.qlwapp-show {
+      .qlwapp-toggle {
+
+        .qlwapp-icon {         
+          transform: scale(0,0);
+          opacity: 0;
+        }
+
+        .qlwapp-close {
+          transform: scale(1,1);
+          opacity: 1;
+        }
+      }
+    }
+
+    .qlwapp-toggle {
+
+      .qlwapp-close {
+        transform: scale(0,0);
+        opacity: 0;
+      }
+
+      .qlwapp-icon {
+        transform: scale(1,1);
+        opacity: 1;
+      }
+
+      .qlwapp-icon,
+      .qlwapp-close {
+        transition: transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1), opacity 300ms ease-in;
+      }
+
+    }
+  }
+
+  .qlwapp-box {
+    display: none;
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1), opacity 300ms ease-in;
+
+    @media (min-width: 430px) {      
+      transform: translateY(50px) scale(0.9);
+    }
+
+    // Carousel
+    // ---------------------------------------------------------------------------
+
+    .qlwapp-carousel {
+      display: flex;
+      width: 200%;
+      height: 100%;
+      //overflow: hidden;
+
+      .qlwapp-slide {
+        width: 50%;
+        transition: max-height 500ms cubic-bezier(0.215, 0.61, 0.355, 1) 1000ms, transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 500ms, opacity 500ms ease-in 500ms;
+        height: 100%;
+        overflow: hidden;
+        //&:last-child {
+        //max-height: 94px;
+        //}
+      }
+    }
+
+    .qlwapp-header {
+
+      .qlwapp-slide {
+        max-height: 300px;
+      }
+
+      .qlwapp-name,
+      .qlwapp-label,
+      .qlwapp-avatar {
+        opacity: 0;
+        transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s, opacity ease-in 0.3s;
+      }
+
+      .qlwapp-name,
+      .qlwapp-label {
+        transform: translateX(56px);
+      }
+
+      .qlwapp-avatar {
+        transform: scale(0.5);
+      }
+
+      .qlwapp-name {
+        transition-delay: 800ms
+      }
+
+      .qlwapp-label {
+        transition-delay: 850ms
+      }
+
+      .qlwapp-avatar {
+        transition-delay: 900ms
+      }
+
+    }   
+
+    .qlwapp-footer,
+    .qlwapp-response,
+    .qlwapp-previous,
+    .qlwapp-message,
+    .qlwapp-user {
+      transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 600ms, opacity ease-in 200ms;
+    }
+
+    .qlwapp-response,
+    .qlwapp-previous,
+    .qlwapp-user {
+      opacity: 0;
+    }
+
+    .qlwapp-response {
+      pointer-events: none;
+    }
+
+    .qlwapp-previous {
+      transform: translateX(56px);
+    }
+
+    .qlwapp-user {
+      transform: translateY(56px);
+    }
+
+    .qlwapp-close {
+      transition: opacity 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    .qlwapp-description {
+      transition: transform 600ms cubic-bezier(0.215, 0.61, 0.355, 1), opacity 900ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    .qlwapp-account {
+      transition: transform 600ms cubic-bezier(0.215, 0.61, 0.355, 1), opacity 150ms ease-in;
+    }
+    .qlwapp-previous {
+      transition-delay: 800ms
+    }    
+
+    .qlwapp-message {
+      transition-delay: 900ms
+    }    
+
+    .qlwapp-close,
+    .qlwapp-description {
+      transition-delay: 900ms
+    }     
+
+    .qlwapp-user {
+      transition-delay: 200ms
+    }
+
+    .qlwapp-account {
+
+      &:nth-of-type(6) {
+        transition-delay: 600ms 
+      }
+
+      &:nth-of-type(5) {
+        transition-delay: 500ms 
+      }
+
+      &:nth-of-type(4) {
+        transition-delay: 400ms 
+      }
+
+      &:nth-of-type(3) {
+        transition-delay: 300ms 
+      }
+
+      &:nth-of-type(2) {
+        transition-delay: 200ms 
+      }
+
+      &:nth-of-type(1) {
+        transition-delay: 100ms 
+      }
+
+    }
+
+    // Premium
+    // -------------------------------------------------------------------------
+    .qlwapp-slide {
+      .qlwapp-message {
+        opacity: 0;
+        transform: translateY(-56px);
+      }
+
+      .qlwapp-box {      
+        .qlwapp-account {
+          &:hover {
+            background-color: #fafafa;
+          }
+        }
+
+      }
+    }
+
+    // Response
+    // -------------------------------------------------------------------------
+
+    &.response {
+
+      .qlwapp-carousel {
+        .qlwapp-slide {
+          transform: translateX(-100%);
+        }
+      }
+
+      .qlwapp-body {
+        .qlwapp-carousel {
+          overflow: hidden;
+          max-height: 134px!important;
+          min-height: 122px;
+        }
+      }
+
+      // Out
+      // -----------------------------------------------------------------------
+
+      .qlwapp-close {
+        transition-delay: 0ms;
+      }
+
+      .qlwapp-close,
+      .qlwapp-footer,
+      .qlwapp-description,
+      .qlwapp-account {
+        opacity: 0;
+      }
+
+      .qlwapp-account {
+        transform: translateY(-33.333%);
+        border-top-color: transparent!important;
+      }
+
+      // In
+      // -----------------------------------------------------------------------
+
+      //.qlwapp-chat {
+      //  overflow: hidden;
+      //}
+
+      .qlwapp-user {
+        display: block;
+        //opacity: 0;
+      }
+
+      .qlwapp-message,
+      .qlwapp-previous,
+      .qlwapp-response {
+        opacity: 1;
+      }
+
+      .qlwapp-response {
+        pointer-events: all;
+      }
+
+      .qlwapp-message,
+      .qlwapp-previous {
+        transform: translate(0);
+      }
+
+      .qlwapp-header {
+
+        .qlwapp-slide {
+          max-height: 84px;
+        }
+
+        .qlwapp-name,
+        .qlwapp-avatar {
+          opacity: 1;
+        }
+
+        .qlwapp-label {
+          opacity: 0.5;
+        }
+
+        .qlwapp-name,
+        .qlwapp-label {
+          transform: translateX(0);
+        }
+
+        .qlwapp-avatar {
+          transform: scale(1);
+        }
+
+      }
+
+      &.opening {
+
+        .qlwapp-footer,
+        .qlwapp-response,
+        .qlwapp-close,
+        .qlwapp-previous,
+        .qlwapp-description,
+        .qlwapp-header .qlwapp-name,
+        .qlwapp-header .qlwapp-label {
+          visibility: visible;
+        }
+      }
+
+    }
+
+    &.texting {
+
+      .qlwapp-body {
+        overflow-y: auto;
+      }
+
+      .qlwapp-user {
+        opacity: 1;
+        transform: translate(0);
+      }
+
+    }
+
+    &.closing {
+
+      .qlwapp-carousel {
+
+        .qlwapp-slide {
+          //transition-delay: 0ms;
+          //transition: max-height 500ms cubic-bezier(0.215, 0.61, 0.355, 1) 1000ms, transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms, opacity 500ms ease-in 500ms;
+        }
+      }
+
+      .qlwapp-previous {
+        transition-delay: 0ms;
+        transform: translateX(-24px);
+        opacity: 0;
+        transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 300ms, opacity ease-out 200ms;
+      }
+
+      .qlwapp-description {
+        opacity: 0;
+      }
+
+    }
+
+  }
+}
+

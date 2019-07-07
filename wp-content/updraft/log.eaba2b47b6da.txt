@@ -1,0 +1,207 @@
+0000.000 (0) Opened log file at time: Mon, 03 Jun 2019 16:12:27 +0000 on http://helawebdesign.com
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.14 WP: 5.2.1 PHP: 5.6.40 (fpm-fcgi, Linux logan.baiscopehosting.com 3.10.0-714.10.2.lve1.5.19.8.el7.x86_64 #1 SMP Wed Oct 24 08:54:57 EDT 2018 x86_64) MySQL: 5.7.26 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 53M | 53.5M) multisite: N openssl: OpenSSL 1.0.2r  26 Feb 2019 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.001 (0) Free space on disk containing Updraft's temporary directory: 1528035.6 MB
+0000.002 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.003 (0) Semaphore (fd, wphi_options) being initialised
+0000.004 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.005 (0) Set semaphore last lock (fd) time to 2019-06-03 16:12:27
+0000.005 (0) Semaphore lock (fd) complete
+0000.007 (0) Backup run: resumption=0, nonce=eaba2b47b6da, file_nonce=eaba2b47b6da begun at=1559578347 (0s ago), job type=backup
+0000.007 (0) Scheduling a resumption (1) after 300 seconds (1559578647) in case this run gets aborted
+0000.012 (0) Checking if we have a zip executable available
+0000.013 (0) Creation of backups of directories: beginning
+0000.014 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.079 (0) Total entities for the zip file: 915 directories, 3917 files (0 skipped as non-modified), 57.8 MB
+0000.091 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.095 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.100 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.105 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.110 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.110 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.8 MB, 3917 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.267 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 600 files added (on-disk size: 1088.5 KB)
+0000.272 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 700 files added (on-disk size: 1088.5 KB)
+0000.279 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 800 files added (on-disk size: 1088.5 KB)
+0000.285 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 900 files added (on-disk size: 1088.5 KB)
+0000.291 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 1000 files added (on-disk size: 1088.5 KB)
+0000.292 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (10.9 MB, 3917 files batched, 501 (1002) added so far); re-opening (prior size: 1088.5 KB)
+0001.336 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 1100 files added (on-disk size: 4127.7 KB)
+0001.345 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 1200 files added (on-disk size: 4127.7 KB)
+0001.354 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 1300 files added (on-disk size: 4127.7 KB)
+0001.362 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 1400 files added (on-disk size: 4127.7 KB)
+0001.370 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 1500 files added (on-disk size: 4127.7 KB)
+0001.370 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.3 MB, 3917 files batched, 501 (1503) added so far); re-opening (prior size: 4127.7 KB)
+0001.488 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 1600 files added (on-disk size: 5125.9 KB)
+0001.497 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 1700 files added (on-disk size: 5125.9 KB)
+0001.505 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 1800 files added (on-disk size: 5125.9 KB)
+0001.514 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 1900 files added (on-disk size: 5125.9 KB)
+0001.523 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 2000 files added (on-disk size: 5125.9 KB)
+0001.524 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.5 MB, 3917 files batched, 501 (2004) added so far); re-opening (prior size: 5125.9 KB)
+0001.705 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 2100 files added (on-disk size: 5911.5 KB)
+0001.713 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 2200 files added (on-disk size: 5911.5 KB)
+0001.721 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 2300 files added (on-disk size: 5911.5 KB)
+0001.730 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 2400 files added (on-disk size: 5911.5 KB)
+0001.738 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 2500 files added (on-disk size: 5911.5 KB)
+0001.739 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (19 MB, 3917 files batched, 501 (2505) added so far); re-opening (prior size: 5911.5 KB)
+0002.775 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 2600 files added (on-disk size: 11300.1 KB)
+0002.783 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 2700 files added (on-disk size: 11300.1 KB)
+0002.793 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 2800 files added (on-disk size: 11300.1 KB)
+0002.802 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 2900 files added (on-disk size: 11300.1 KB)
+0002.812 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 3000 files added (on-disk size: 11300.1 KB)
+0002.813 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.3 MB, 3917 files batched, 501 (3006) added so far); re-opening (prior size: 11300.1 KB)
+0003.254 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 3100 files added (on-disk size: 13579.3 KB)
+0003.264 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 3200 files added (on-disk size: 13579.3 KB)
+0003.274 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 3300 files added (on-disk size: 13579.3 KB)
+0003.284 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 3400 files added (on-disk size: 13579.3 KB)
+0003.294 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 3500 files added (on-disk size: 13579.3 KB)
+0003.296 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.4 MB, 3917 files batched, 501 (3507) added so far); re-opening (prior size: 13579.3 KB)
+0003.864 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 3600 files added (on-disk size: 16117.1 KB)
+0003.875 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 3700 files added (on-disk size: 16117.1 KB)
+0003.887 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 3800 files added (on-disk size: 16117.1 KB)
+0003.898 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip.tmp: 3900 files added (on-disk size: 16117.1 KB)
+0004.540 (0) Created plugins zip (0) - 17223.9 KB in 4.5 s (3806.6 KB/s) (sha1: 44106b4282388cc96ecdd49e2723be961eb5d0ce, sha256: 1c8367203efb8eda5c285e708064a2b68bdea2495769b6c2b3941706cb38fe81)
+0004.541 (0) Beginning creation of dump of themes (split every: 400 MB)
+0004.549 (0) Total entities for the zip file: 144 directories, 572 files (0 skipped as non-modified), 6.9 MB
+0004.551 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0004.554 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0004.557 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0004.560 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0004.563 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0004.563 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.2 MB, 572 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0004.938 (0) Created themes zip (0) - 3121.1 KB in 0.4 s (7876.3 KB/s) (sha1: 37edccf45295ba7da32a66db8c935918c9194c09, sha256: 2edb239def3ef8c9b9314290105324bcdfe358da4ad71ae7f631b37de9bf4697)
+0004.939 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0004.940 (0) Looking for candidates to backup in: /home/helawebd/public_html/wp-content/uploads
+0004.940 (0) finding files: astra-sites: adding to list (1)
+0004.941 (0) finding files: elementor: adding to list (2)
+0004.941 (0) finding files: 2019: adding to list (3)
+0004.941 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0004.944 (0) Total entities for the zip file: 7 directories, 114 files (0 skipped as non-modified), 15.8 MB
+0004.946 (0) Zip: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0005.458 (0) Created uploads zip (0) - 16020.3 KB in 0.5 s (31023.8 KB/s) (sha1: 4413b88c7d1990ff533c520f764866884790d4b6, sha256: c3e2cb1609714fc2c5f718f4b0756f367c45bb4efae363d52b10645453660462)
+0005.460 (0) Beginning backup of other directories found in the content directory (index: 0)
+0005.460 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0005.461 (0) Looking for candidates to backup in: /home/helawebd/public_html/wp-content
+0005.461 (0) finding files: updraft: skipping: this is the updraft directory
+0005.461 (0) finding files: plugins: skipping: this is the plugins directory
+0005.462 (0) finding files: index.php: adding to list (1)
+0005.462 (0) finding files: uploads: skipping: this is the uploads directory
+0005.462 (0) finding files: upgrade: skipping: excluded by options
+0005.463 (0) finding files: htaccess-editor-backups: skipping: excluded by options (glob)
+0005.463 (0) finding files: themes: skipping: this is the themes directory
+0005.465 (0) Total entities for the zip file: 0 directories, 1 files (0 skipped as non-modified), 0 MB
+0005.467 (0) Created others zip (0) - 0.1 KB in 0 s (50.8 KB/s) (sha1: 29e123ab6398ec232478281f3378c163f3a7989f, sha256: 1c47ab025445776579eb244b063a475e0ce35b06c7b7fc30862ae45d32ec66b1)
+0005.469 (0) Saving backup status to database (elements: 8)
+0005.470 (0) Beginning creation of database dump (WordPress DB)
+0005.473 (0) Table wphi_options: Total expected rows (approximate): 250
+0005.486 (0) Table wphi_options: Total rows added: 246 in 0.01 seconds
+0005.487 (0) Table wphi_options: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_options.table.gz - 60.3 KB)
+0005.489 (0) Table wphi_users: Total expected rows (approximate): 1
+0005.490 (0) Table wphi_users: Total rows added: 1 in 0.00 seconds
+0005.491 (0) Table wphi_users: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_users.table.gz - 0.5 KB)
+0005.492 (0) Table wphi_usermeta: Total expected rows (approximate): 27
+0005.494 (0) Table wphi_usermeta: Total rows added: 27 in 0.00 seconds
+0005.494 (0) Table wphi_usermeta: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_usermeta.table.gz - 1.5 KB)
+0005.496 (0) Table wphi_commentmeta: Total expected rows (approximate): 0
+0005.497 (0) Table wphi_commentmeta: Total rows added: 0 in 0.00 seconds
+0005.498 (0) Table wphi_commentmeta: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_commentmeta.table.gz - 0.3 KB)
+0005.500 (0) Table wphi_comments: Total expected rows (approximate): 1
+0005.501 (0) Table wphi_comments: Total rows added: 1 in 0.00 seconds
+0005.501 (0) Table wphi_comments: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_comments.table.gz - 0.7 KB)
+0005.503 (0) Table wphi_links: Total expected rows (approximate): 0
+0005.504 (0) Table wphi_links: Total rows added: 0 in 0.00 seconds
+0005.505 (0) Table wphi_links: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_links.table.gz - 0.4 KB)
+0005.507 (0) Table wphi_postmeta: Total expected rows (approximate): 785
+0005.539 (0) Table wphi_postmeta: Total rows added: 785 in 0.03 seconds
+0005.540 (0) Table wphi_postmeta: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_postmeta.table.gz - 87.4 KB)
+0005.542 (0) Table wphi_posts: Total expected rows (approximate): 142
+0005.556 (0) Table wphi_posts: Total rows added: 142 in 0.01 seconds
+0005.557 (0) Table wphi_posts: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_posts.table.gz - 31 KB)
+0005.559 (0) Table wphi_term_relationships: Total expected rows (approximate): 13
+0005.560 (0) Table wphi_term_relationships: Total rows added: 13 in 0.00 seconds
+0005.561 (0) Table wphi_term_relationships: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_term_relationships.table.gz - 0.4 KB)
+0005.562 (0) Table wphi_term_taxonomy: Total expected rows (approximate): 4
+0005.564 (0) Table wphi_term_taxonomy: Total rows added: 4 in 0.00 seconds
+0005.564 (0) Table wphi_term_taxonomy: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_term_taxonomy.table.gz - 0.4 KB)
+0005.566 (0) Table wphi_termmeta: Total expected rows (approximate): 0
+0005.567 (0) Table wphi_termmeta: Total rows added: 0 in 0.00 seconds
+0005.568 (0) Table wphi_termmeta: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_termmeta.table.gz - 0.3 KB)
+0005.570 (0) Table wphi_terms: Total expected rows (approximate): 4
+0005.571 (0) Table wphi_terms: Total rows added: 4 in 0.00 seconds
+0005.571 (0) Table wphi_terms: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_terms.table.gz - 0.4 KB)
+0005.573 (0) Table wphi_yoast_seo_links: Total expected rows (approximate): 13
+0005.574 (0) Table wphi_yoast_seo_links: Total rows added: 13 in 0.00 seconds
+0005.575 (0) Table wphi_yoast_seo_links: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_yoast_seo_links.table.gz - 0.6 KB)
+0005.577 (0) Table wphi_yoast_seo_meta: Total expected rows (approximate): 20
+0005.578 (0) Table wphi_yoast_seo_meta: Total rows added: 20 in 0.00 seconds
+0005.578 (0) Table wphi_yoast_seo_meta: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_yoast_seo_meta.table.gz - 0.4 KB)
+0005.580 (0) Table wphi_nextend2_image_storage: Total expected rows (approximate): 1
+0005.595 (0) Table wphi_nextend2_image_storage: Total rows added: 1 in 0.01 seconds
+0005.596 (0) Table wphi_nextend2_image_storage: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_image_storage.table.gz - 0.5 KB)
+0005.598 (0) Table wphi_nextend2_section_storage: Total expected rows (approximate): 1
+0005.607 (0) Table wphi_nextend2_section_storage: Total rows added: 1 in 0.01 seconds
+0005.608 (0) Table wphi_nextend2_section_storage: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_section_storage.table.gz - 0.4 KB)
+0005.610 (0) Table wphi_nextend2_smartslider3_generators: Total expected rows (approximate): 0
+0005.611 (0) Table wphi_nextend2_smartslider3_generators: Total rows added: 0 in 0.00 seconds
+0005.611 (0) Table wphi_nextend2_smartslider3_generators: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_smartslider3_generators.table.gz - 0.3 KB)
+0005.613 (0) Table wphi_nextend2_smartslider3_sliders: Total expected rows (approximate): 2
+0005.624 (0) Table wphi_nextend2_smartslider3_sliders: Total rows added: 2 in 0.01 seconds
+0005.625 (0) Table wphi_nextend2_smartslider3_sliders: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_smartslider3_sliders.table.gz - 2.4 KB)
+0005.627 (0) Table wphi_nextend2_smartslider3_sliders_xref: Total expected rows (approximate): 1
+0005.637 (0) Table wphi_nextend2_smartslider3_sliders_xref: Total rows added: 1 in 0.01 seconds
+0005.638 (0) Table wphi_nextend2_smartslider3_sliders_xref: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_smartslider3_sliders_xref.table.gz - 0.3 KB)
+0005.641 (0) Table wphi_nextend2_smartslider3_slides: Total expected rows (approximate): 4
+0005.643 (0) Table wphi_nextend2_smartslider3_slides: Total rows added: 4 in 0.00 seconds
+0005.644 (0) Table wphi_nextend2_smartslider3_slides: finishing file (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_smartslider3_slides.table.gz - 2.2 KB)
+0005.647 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_options.table.gz (1/20): adding to final database dump
+0005.663 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_users.table.gz (2/20): adding to final database dump
+0005.664 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_usermeta.table.gz (3/20): adding to final database dump
+0005.665 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_commentmeta.table.gz (4/20): adding to final database dump
+0005.666 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_comments.table.gz (5/20): adding to final database dump
+0005.666 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_links.table.gz (6/20): adding to final database dump
+0005.667 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_postmeta.table.gz (7/20): adding to final database dump
+0005.690 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_posts.table.gz (8/20): adding to final database dump
+0005.695 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_term_relationships.table.gz (9/20): adding to final database dump
+0005.696 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_term_taxonomy.table.gz (10/20): adding to final database dump
+0005.696 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_termmeta.table.gz (11/20): adding to final database dump
+0005.697 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_terms.table.gz (12/20): adding to final database dump
+0005.697 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_yoast_seo_links.table.gz (13/20): adding to final database dump
+0005.698 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_yoast_seo_meta.table.gz (14/20): adding to final database dump
+0005.698 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_image_storage.table.gz (15/20): adding to final database dump
+0005.699 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_section_storage.table.gz (16/20): adding to final database dump
+0005.699 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_smartslider3_generators.table.gz (17/20): adding to final database dump
+0005.700 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_smartslider3_sliders.table.gz (18/20): adding to final database dump
+0005.701 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_smartslider3_sliders_xref.table.gz (19/20): adding to final database dump
+0005.701 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db-table-wphi_nextend2_smartslider3_slides.table.gz (20/20): adding to final database dump
+0005.702 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db.gz: finished writing out complete database file (160 KB)
+0005.706 (0) Total database tables backed up: 20 (backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db.gz, size: 190322, sha256)
+0005.709 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0005.709 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0005.710 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0005.710 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-others.zip: others: This file has not yet been successfully uploaded: will queue
+0005.711 (0) backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db.gz: db: This file has not yet been successfully uploaded: will queue
+0005.711 (0) Saving backup history. Total backup size: 35.7 MB
+0005.712 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0005.714 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0005.714 (0) No remote despatch: user chose no remote backup service
+0005.715 (0) Recording as successfully uploaded: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-plugins.zip
+0005.716 (0) Recording as successfully uploaded: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-themes.zip
+0005.717 (0) Recording as successfully uploaded: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-uploads.zip
+0005.719 (0) Recording as successfully uploaded: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-others.zip
+0005.720 (0) Recording as successfully uploaded: backup_2019-06-03-1612_HelaWeb_Design_eaba2b47b6da-db.gz
+0005.723 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0005.723 (0) Number of backup sets in history: 1; groups (db): 1
+0005.724 (0) Examining (for databases) backup set with group_id=0, nonce=eaba2b47b6da, datestamp=1559578347 (Jun 03 2019 16:12:27)
+0005.724 (0) This backup set is the backup set just made, so will not be deleted.
+0005.724 (0) Number of backup sets in history: 1; groups (files): 1
+0005.725 (0) Examining (for files) backup set with nonce=eaba2b47b6da, datestamp=1559578347 (Jun 03 2019 16:12:27)
+0005.725 (0) This backup set is the backup set just made, so will not be deleted.
+0005.725 (0) This backup set is the backup set just made, so will not be deleted.
+0005.725 (0) This backup set is the backup set just made, so will not be deleted.
+0005.725 (0) This backup set is the backup set just made, so will not be deleted.
+0005.725 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0005.726 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0005.727 (0) Resume backup (eaba2b47b6da, 0): finish run
+0005.729 (0) Decremented the semaphore (fd) by 1
+0005.729 (0) Semaphore (fd) unlocked
+0005.730 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0005.732 (0) No email will/can be sent - the user has not configured an email address.
+0005.732 (0) The backup apparently succeeded and is now complete
